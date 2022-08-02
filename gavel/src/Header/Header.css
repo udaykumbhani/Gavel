@@ -1,0 +1,30 @@
+@import '../App.css';
+
+.header-section{
+    background-color: #0B1836;
+}
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-menubar{
+    display: flex;
+}
+.nav-bar{
+    display: flex;
+}
+.account{
+    display: flex;
+}
+.nav-list{
+    margin-right: 44px;
+}
+.nav-list:last-child{
+    margin-right: 0px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
