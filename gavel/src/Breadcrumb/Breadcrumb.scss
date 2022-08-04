@@ -1,0 +1,40 @@
+@import '../App.css';
+@import '../style/Varibles.scss';
+
+.Breadcrumb{
+    padding: 23px 0px 24px 0px;
+    border-bottom: 1px solid #353945;
+    .breadcrumb-main{
+        max-width: 1172px;
+        width: 100%;
+        margin: 0 auto;
+        @include xl {
+            padding: 0px 16px;
+        }
+        .breadcrumb-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .heading-title{
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 16px;
+                text-align: center;
+                color: $headig-color;
+                @include sm{
+                    font-size: 24px;
+                    line-height: 12px;
+                }
+            }
+            .bread-btn{
+                @include sm {
+                    font-size: 14px;
+                    line-height: 14px;
+                    padding: 10px 10px;
+                }
+            }
+        }
+    }
+}

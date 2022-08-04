@@ -1,0 +1,15 @@
+@import '../App.css';
+@import '../style/Varibles.scss';
+
+.show-component{
+    .show-top-wrapper{
+        .show-top-col{
+            .heading{
+                @include heading-first;
+            }
+            .show-btn{
+                @include view-btn;
+            }
+        }
+    }
+}

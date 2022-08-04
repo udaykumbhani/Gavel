@@ -1,0 +1,38 @@
+@import '../App.css';
+@import '../style/Varibles.scss';
+
+.tabbar{
+    padding: 19.96px 0px 18.04px 0px;
+    .tab-box{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #0CFDE4;
+        border-radius: 6px;
+        background-color: transparent;
+        overflow: hidden;
+        .tab-link{
+            font-family: $rubik;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #ffffff;
+            border-right: 1px solid #0CFDE4;
+            padding: 7px 16.29px;
+            transition: all 0.4s;
+            &.tab-link:last-child{
+                border-right: none;  
+            }
+            &.tab-link:focus{
+                background: #B2A8EE;
+                color: #0F0B21;
+                box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
+            }
+            @include sm {
+                padding: 7px 10px;
+            }
+        }
+    }
+}
