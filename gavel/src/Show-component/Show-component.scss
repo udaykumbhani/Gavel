@@ -1,15 +1,227 @@
 @import '../App.css';
 @import '../style/Varibles.scss';
 
+
+
 .show-component{
     .show-top-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 36.12px 0px 30px 0px;
         .show-top-col{
             .heading{
                 @include heading-first;
+                @include xl{
+                    min-width: 700px;
+                }
+                @include xmd{
+                    min-width: 400px;
+                }
+                @include sm{
+                    min-width: 200px;
+                    font-size: 24px;
+                    line-height: 30px;
+                }
             }
             .show-btn{
                 @include view-btn;
+                @include sm{
+                    font-size: 14px;
+                    line-height: 14px;
+                    padding: 8px 10px;
+                }
             }
         }
+    }
+    .show-bottom-wrapper{
+        margin-bottom: 36.5px;
+        .show-bottom-col{
+            .show-image-part{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border-radius: 8px;
+                position: relative;
+                .show-image-card{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    overflow: hidden;
+                    border-radius: 8px;
+                }
+                    .btns-col{
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        position: absolute;
+                        top: 8px;
+                        left: 12px;
+
+                        .story-view-btn{
+                            background: rgba(32, 44, 71, 0.5);
+                            backdrop-filter: blur(24px);
+                            border-radius: 16px;
+                            border: none;
+                            padding: 8.5px 10px;
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            margin-bottom: 6px;
+                            .story-view-text{
+                                @include show-btn;
+                            }
+                        }
+                        .story-language-btn{
+                            @include show-btn;
+                            background: rgba(32, 44, 71, 0.5);
+                            backdrop-filter: blur(10px);
+                            border-radius: 16px;
+                            padding: 8.5px 10px;
+                            border: none;
+                        }
+                    }
+                    .btns-second-col{
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        position: absolute;
+                        top: 8px;
+                        right: 8px;
+                        .live-btn{
+                            background-color: #EC000F;
+                            border: none;
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            padding: 8.67px 9.22px;
+                            border-radius: 65.0602px;
+                            margin-bottom: 10px;
+                            .live-btn-text{
+                                @include show-btn;
+                            }
+                        }
+                        .share-btn{
+                            margin-bottom: 10px;
+                            .share-link{
+                                width: 32px;
+                                height: 32px;
+                                background: #202C47;
+                                border: 1px solid #0CFDE4;
+                                border-radius: 50%;
+                                padding: 6px 9px;
+                                display: inline-block;
+                                svg{
+                                    width: 12px;
+                                    height: 12px;
+                                }
+                                
+                            }
+                        }
+                        .saved-btn{
+                            .saved-link{
+                                width: 32px;
+                                height: 32px;
+                                background: #202C47;
+                                border: 1px solid #0CFDE4;
+                                border-radius: 50%;
+                                padding: 10px;
+                                margin-bottom: 10px;
+                                svg{
+                                    width: 10px;
+                                    height: 14px;
+                                }
+                            }
+                        }
+                    }
+                    .overlay-part{
+                        background: linear-gradient(180deg, rgba(28, 39, 61, 0) 0.29%, rgba(28, 39, 61, 0.53) 16.01%, #1C273D 54.81%);
+                        height: 55px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        .account-part{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 10.5px 12px;
+                            .account-col{
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                                .account-persone-image{
+                                    width: 30px;
+                                    height: 30px;
+                                    overflow: hidden;
+                                    background: #9757D7;
+                                    border-radius: 48px;
+                                    .persone-img{
+                                        width: 26.75px;
+                                        height: 30px;
+                                        overflow: hidden;
+                                        object-fit: cover;
+                                    }
+                                }
+                                .account-persone-name{
+                                    display: flex;
+                                    flex-direction: column;
+                                    .ac-name{
+                                        font-family: $montserrat;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 17px;
+                                        color: #FAE8DC;
+                                    }
+                                    .ac-follower{
+                                        font-family: $montserrat;
+                                        font-style: normal;
+                                        font-weight: 300;
+                                        font-size: 12px;
+                                        line-height: 17px;
+                                        color: #FCFCFD;
+                                    }
+                                }
+                            }
+                            .account-col-second{
+                                .following-btn{
+                                    font-family: $montserrat;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 12px;
+                                    text-transform: uppercase;
+                                    color: $primary-color;
+                                    background-color: transparent;
+                                    border: none;
+                                    padding: 8px;
+                                    border: 1px solid #0CFDE4;
+                                    border-radius: 4px;
+                                }
+                            }
+                        }
+                    }
+            }
+            .show-heading-content{
+                
+                .show-paragraph{
+                    font-family: $montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $secondary-color;
+                    max-width: 256px;
+                    margin: 10px 0px;
+                    .show-span{
+                        color: #B2A8EE;
+                    }
+                }
+            }
+        }
+    }
+    .slick-arrow.slick-prev{
+        display: none !important;
     }
 }

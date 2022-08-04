@@ -76,6 +76,9 @@ header{
                         right: 4px;
                         top: -5px;
                     }
+                    @include sm{
+                        display: none;
+                    }
                 }
                 .ac-btn{
                     width: 131px;

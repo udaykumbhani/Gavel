@@ -4,18 +4,16 @@ import Header from './Header/Header';
 import Breadcrumb from './Breadcrumb/Breadcrumb';
 import Tabbar from './Tabbar/Tabbar';
 import Showcomponent from './Show-component/Show-component';
-// import homepage from '../src/homepage';
 
-function App() {
-  return (
-    <>
-    <Header/>
-    <Breadcrumb/>
-    <Tabbar/>
-    <Showcomponent/>
-    {/* <homepage /> */}
-    </>
-  );
-}
-
-export default App;
+function homepage() {
+    return (
+      <>
+      <Header/>
+      <Breadcrumb/>
+      <Tabbar/>
+      <Showcomponent/>
+      </>
+    );
+  }
+  
+  export default homepage;
