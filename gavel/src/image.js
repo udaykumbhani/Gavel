@@ -5,4 +5,5 @@ export const image = {
     showimg_three :require("../src/images/showimg_three.png"),
     showimg_foure :require("../src/images/showimg_foure.png"),
     Persone :require("../src/images/Persone.png"),
+    Joinusimg :require("../src/images/Joinusimg.png"),
 }

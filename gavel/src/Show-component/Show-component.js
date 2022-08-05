@@ -6,47 +6,55 @@ import { ReactComponent as Live } from "../images/Live.svg";
 import { ReactComponent as Share } from "../images/Share.svg";
 import { ReactComponent as Saved } from "../images/Saved.svg";
 import { ReactComponent as Right } from "../images/right.svg";
+import { ReactComponent as Rightarrowimg } from "../images/Rightarrowimg.svg";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
 
-export default function Showcomponent(){
+export default function Showcomponent({heading, prilanguage, seclanguage }){
     var settings = {
         dots: false,
         infinite: true,
         speed: 1000,
         slidesToShow: 4,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         // centerPadding: '32px',
        
         responsive: [
             {
               breakpoint: 1200,
               settings: {
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 3,
                 infinite: true,
                 dots: false,
-                arrows: false,
+                arrows: true,
               }
             },
             {
-              breakpoint: 976,
+              breakpoint: 1024,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 3,
                 slidesToScroll: 2
               }
             },
             {
-              breakpoint: 576,
+              breakpoint: 768,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1
               }
-            }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
           ]
       };
     return(
@@ -54,7 +62,7 @@ export default function Showcomponent(){
             <div className="container">
                 <div className="show-top-wrapper">
                     <div className="show-top-col">
-                        <h1 className="heading">Live Show</h1>
+                        <h1 className="heading">{heading}</h1>
                     </div>
                     <div className="show-top-col">
                         <button className="show-btn">View All</button>
@@ -63,7 +71,7 @@ export default function Showcomponent(){
 
 
                 <div className="show-bottom-wrapper">
-                <Slider {...settings}>
+                    <Slider {...settings}>
                         <div className="show-bottom-col">
                             <div className="show-image-part">
                                 <img src={image.showimg_one} alt='profile_image' className="show-image-card"></img>
@@ -72,7 +80,7 @@ export default function Showcomponent(){
                                         <View />
                                         <span className="story-view-text">54</span>
                                         </button>
-                                        <button className="story-language-btn">English Show</button>
+                                        <button className="story-language-btn">{prilanguage}</button>
                                     </div>
                                     <div className="btns-second-col">
                                         <button className="live-btn">
@@ -121,7 +129,7 @@ export default function Showcomponent(){
                                         <View />
                                         <span className="story-view-text">54</span>
                                         </button>
-                                        <button className="story-language-btn">English Show</button>
+                                        <button className="story-language-btn">{prilanguage}</button>
                                     </div>
                                     <div className="btns-second-col">
                                         <button className="live-btn">
@@ -170,7 +178,7 @@ export default function Showcomponent(){
                                         <View />
                                         <span className="story-view-text">54</span>
                                         </button>
-                                        <button className="story-language-btn">English Show</button>
+                                        <button className="story-language-btn">{seclanguage}</button>
                                     </div>
                                     <div className="btns-second-col">
                                         <button className="live-btn">
@@ -219,7 +227,7 @@ export default function Showcomponent(){
                                         <View />
                                         <span className="story-view-text">54</span>
                                         </button>
-                                        <button className="story-language-btn">English Show</button>
+                                        <button className="story-language-btn">{seclanguage}</button>
                                     </div>
                                     <div className="btns-second-col">
                                         <button className="live-btn">
@@ -268,7 +276,7 @@ export default function Showcomponent(){
                                         <View />
                                         <span className="story-view-text">54</span>
                                         </button>
-                                        <button className="story-language-btn">English Show</button>
+                                        <button className="story-language-btn">{prilanguage}</button>
                                     </div>
                                     <div className="btns-second-col">
                                         <button className="live-btn">
@@ -317,7 +325,7 @@ export default function Showcomponent(){
                                         <View />
                                         <span className="story-view-text">54</span>
                                         </button>
-                                        <button className="story-language-btn">English Show</button>
+                                        <button className="story-language-btn">{prilanguage}</button>
                                     </div>
                                     <div className="btns-second-col">
                                         <button className="live-btn">
@@ -366,7 +374,7 @@ export default function Showcomponent(){
                                         <View />
                                         <span className="story-view-text">54</span>
                                         </button>
-                                        <button className="story-language-btn">English Show</button>
+                                        <button className="story-language-btn">{seclanguage}</button>
                                     </div>
                                     <div className="btns-second-col">
                                         <button className="live-btn">
@@ -415,7 +423,7 @@ export default function Showcomponent(){
                                         <View />
                                         <span className="story-view-text">54</span>
                                         </button>
-                                        <button className="story-language-btn">English Show</button>
+                                        <button className="story-language-btn">{seclanguage}</button>
                                     </div>
                                     <div className="btns-second-col">
                                         <button className="live-btn">
@@ -457,15 +465,12 @@ export default function Showcomponent(){
                         </div>
                     
                     </Slider>
-                        
-
-                        
-
-                        
-
-                        
+                    <div className="custom-rightarrow">
+                        <Rightarrowimg />
                     </div>
                 </div>
+                    
+            </div>
         </section>
     )
 }

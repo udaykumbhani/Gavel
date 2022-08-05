@@ -3,8 +3,8 @@ import './App.css';
 import Header from './Header/Header';
 import Breadcrumb from './Breadcrumb/Breadcrumb';
 import Tabbar from './Tabbar/Tabbar';
-import Showcomponent from './Show-component/Show-component';
-// import homepage from '../src/homepage';
+import Featured from './Featured/Featured';
+
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
     <Header/>
     <Breadcrumb/>
     <Tabbar/>
-    <Showcomponent/>
-    {/* <homepage /> */}
+    <Featured />
+    
     </>
   );
 }

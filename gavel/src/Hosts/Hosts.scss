@@ -1,0 +1,38 @@
+@import '../App.css';
+@import '../style/Varibles.scss';
+
+.hosts{
+    padding: 36.5px 0px;
+    .hosts-top-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0px 0px 30px 0px;
+        .hosts-top-col{
+            .hosts-heading{
+                @include heading-first;
+                @include xl{
+                    min-width: 700px;
+                }
+                @include xmd{
+                    min-width: 400px;
+                }
+                @include sm{
+                    min-width: 200px;
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .hosts-top-col{
+            .hosts-btn{
+                @include view-btn;
+                @include sm{
+                    font-size: 14px;
+                    line-height: 14px;
+                    padding: 8px 10px;
+                }
+            }
+        }
+    }
+}
