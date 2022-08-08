@@ -35,4 +35,103 @@
             }
         }
     }
+    .hosts-bottom-wrapper{
+        .hosts-bottom-col{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .host-content-main{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
+                border-radius: 6px;
+                background: #202C47;
+                border: 1px solid #3F4E72;
+                padding: 42px 0px 40px 0px;
+                max-width: 256px;
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                .hosts-image-part{
+                    width: 93px;
+                    height: 93px;
+                    overflow: hidden;
+                    margin-bottom: 18px;
+                    .personelogo-img{
+                        max-width: 93px;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        overflow: hidden;
+                        border: 1px solid #353945;
+                        border-radius: 100%;
+                        background-color: white;
+                    }
+                }
+                .account-persone-name{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 27px;
+                    .ac-name{
+                        font-family: $montserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #FAE8DC;
+                        margin-bottom: 2px;
+                    }
+                    .ac-follower{
+                        font-family: $montserrat;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 17px;
+                        color: #FCFCFD;
+                    }
+                }
+                .hosts-btn-part{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .follow-btn{
+                        @include follow-btn;
+                        @include md {
+                            padding: 10px 10px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .hosts-overlay{
+                    .host-first-desigen{
+                        background: linear-gradient(142.83deg, rgba(12, 253, 228, 0.4) 23.01%, rgba(12, 253, 228, 0) 69.85%);
+                        filter: blur(4px);
+                        transform: rotate(169.01deg);
+                        width: 53.22px;
+                        height: 68.13px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: -15.6px;
+                        left: 13.79px;
+                    }
+                    .host-second-desigen{
+                        background: linear-gradient(146.24deg, rgba(12, 253, 228, 0.5) 11.87%, rgba(12, 253, 228, 0) 73.22%);
+                        filter: blur(4px);
+                        transform: rotate(-26.56deg);
+                        border-radius: 50%;
+                        width: 60.62px;
+                        height: 48.3px;
+                        position: absolute;
+                        top: 26.27px;
+                        left: -8.22px;
+                    }
+                }
+            }
+        }
+    }
 }

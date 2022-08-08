@@ -4,6 +4,8 @@ import "../Featured/Featured.scss";
 import Showcomponent from "../Show-component/Show-component";
 import Joinus from "../Joinus/Joinus";
 import Hosts from "../Hosts/Hosts";
+import Interests from "../Interests/Interests";
+import Categories from "../Categories/Categories";
 
 export default function Featured(){
     return(
@@ -29,6 +31,10 @@ export default function Featured(){
         /></section>
 
         <Hosts />
+
+        <Interests/>
+
+        <Categories />
 
         </>
     )
