@@ -6,6 +6,8 @@ import Joinus from "../Joinus/Joinus";
 import Hosts from "../Hosts/Hosts";
 import Interests from "../Interests/Interests";
 import Categories from "../Categories/Categories";
+import Ads from "../Ads/Ads";
+import Footer from "../Footer/Footer";
 
 export default function Featured(){
     return(
@@ -35,6 +37,10 @@ export default function Featured(){
         <Interests/>
 
         <Categories />
+
+        <Ads />
+
+        <Footer  />
 
         </>
     )

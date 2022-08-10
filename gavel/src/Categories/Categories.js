@@ -16,9 +16,45 @@ export default function Categories (){
                 </div>
 
                 <div className="categories-bottom-wrapper">
-                    <div className="categories-bottom-col">
-                        <div className="categories-content">
-                            
+                    <div className="categories-col">
+                        <div className="categories-box">
+                            <div className="categories-img-part">
+                                <img src={image.Pokemon} alt='Pokemon_image' className="categories-img"></img>
+                            </div>
+                            <div className="box-text">
+                                <h3 className="box-heading">Pokemon</h3>
+                            </div>
+                            <div className="box-shape"></div>
+                        </div>
+
+                        <div className="categories-box">
+                            <div className="categories-img-part">
+                                <img src={image.FunkoPop} alt='FunkoPop_image' className="categories-img"></img>
+                            </div>
+                            <div className="box-text">
+                                <h3 className="box-heading">Funko Pop</h3>
+                            </div>
+                            <div className="box-shape"></div>
+                        </div>
+
+                        <div className="categories-box">
+                            <div className="categories-img-part">
+                                <img src={image.Actionfigure} alt='Actionfigure_image' className="categories-img"></img>
+                            </div>
+                            <div className="box-text">
+                                <h3 className="box-heading">Action  figure</h3>
+                            </div>
+                            <div className="box-shape"></div>
+                        </div>
+
+                        <div className="categories-box">
+                            <div className="categories-img-part">
+                                <img src={image.FunkoPop} alt='FunkoPop_image' className="categories-img"></img>
+                            </div>
+                            <div className="box-text">
+                                <h3 className="box-heading">Username</h3>
+                            </div>
+                            <div className="box-shape"></div>
                         </div>
                     </div>
                 </div>
