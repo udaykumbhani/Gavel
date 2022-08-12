@@ -1,2 +1,180 @@
 @import '../App.css';
 @import '../style/Varibles.scss';
+
+.footer{
+    border-top: 1px solid #2B3A5F;
+    padding: 80px 0px;
+    @include md{
+        padding: 50px 0px;
+    }
+    .footer-wrapper{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        @include md{
+            justify-content: center;
+        }
+        @include sm{
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .col-6{
+            display: flex;
+            align-items: flex-end;
+            .col-six-wrapper{
+                display: flex;
+                align-items: flex-end;
+                @include md{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 20px;
+                    margin-right: 50px;
+                }
+                .footer-logo-part{
+                    max-width: 185px;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    margin-right: 198.89px;
+                    @include xl{
+                        margin-right: 70px;
+                    }
+                    @include lg{
+                        margin-right: 50px;
+                    }
+                    @include xmd{
+                        max-width: 89px;
+                    }
+                    @include md{
+                        margin-right: 0;
+                    }
+                    svg{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        overflow: hidden;
+                    }
+                }
+                .form-part{
+                    min-width: 262.75px;
+                    margin-right: 84.62px;
+                    @include lg{
+                        margin-right: 40px;
+                        min-width: 200px;
+                    }
+                    @include md{
+                        margin-right: 0;
+                    }
+                    label{
+                        font-family: $montserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 29.39px;
+                        color: $secondary-color;
+                        min-width: 262.75px;
+                        
+                        @include lg{
+                            min-width: 200px;
+                            font-size: 14px;
+                            line-height: 24px;
+                        }
+                    }
+                    input{
+                        min-width: 262.75px;
+                        min-height: 44.13px;
+                        background: #0B1836;
+                        border-radius: 11px;
+                        border: none;
+                        padding: 4.09px 19.31px 10.17px 19.1px;
+                        margin-top: 2px;
+                        &::placeholder {
+                           color: #B2A8EE;
+                          }
+                          @include lg{
+                            min-width: 200px;
+                            min-height: 30px;
+                            padding: 10px 10px;
+                        }
+                        @include sm{
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+           
+        }
+        .col-6{
+            display: flex;
+            align-items: flex-end;
+            .footer-linkd{
+                display: flex;
+                @include md{
+                    flex-direction: column;
+                    margin-right: 50px;
+                }
+                .footer-link-left{
+                    margin-right: 26.69px;
+                    @include md{
+                        margin-right: 0;
+                    }
+                    li{
+                        a{
+                            font-family: $montserrat;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 11px;
+                            line-height: 18.69px;
+                            color: #B2A8EE;
+                            @include xmd{
+                                line-height: 12px;
+                            }
+                        }
+                    }
+                }
+                .footer-link-right{
+                    margin-right: 78.44px;
+                    @include lg{
+                        margin-right: 50px;
+                    }
+                    @include md{
+                        margin-right: 0;
+                    }
+                    li{
+                        a{
+                            font-family: $montserrat;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 11px;
+                            line-height: 18.69px;
+                            color: #B2A8EE;
+                            @include xmd{
+                                line-height: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-icon{
+                align-self: flex-start;
+                .ft-icons{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    border: 4px solid #0CFDE4;
+                    border-radius: 10px;
+                    padding: 7px;
+                    .ft-list{
+                        .ft-icon{
+    
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

@@ -32,15 +32,15 @@ export default function Featured(){
             seclanguage={"German Show"}
         /></section>
 
-        <Hosts />
+        <section><Hosts /></section>
 
-        <Interests/>
+        <section><Interests/></section>
 
-        <Categories />
+        <section><Categories /></section>
 
-        <Ads />
+        <section><Ads /></section>
 
-        <Footer  />
+        <section><Footer /></section>
 
         </>
     )

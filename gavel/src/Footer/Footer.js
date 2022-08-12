@@ -1,6 +1,5 @@
 import React from "react";
-import { image } from "../image";
-import "../Ads/Ads.scss";
+import "../Footer/Footer.scss";
 import { ReactComponent as Footerlogo } from "../images/footerlogo.svg";
 import { ReactComponent as Reddit } from "../images/reddit.svg";
 import { ReactComponent as Facebook } from "../images/facebook.svg";
@@ -12,17 +11,20 @@ export default function Footer (){
         <section className="footer">
             <div className="container">
                 <div className="footer-wrapper">
-                    <div className="footer-logo-part">
-                        <Footerlogo />
-                    </div>
+                    <div className="col-6">
+                        <div className="col-six-wrapper">
+                            <div className="footer-logo-part">
+                                <Footerlogo />
+                            </div>
 
-                    <div className="footer-talkus">
-                        <form action="index.html">
-                            <label for="email">Talk to us:</label><br />
-                            <input type="email" id="email" placeholder="hello@letsgavel.com" name="email"/>
-                        </form>
+                            <form action="index.html" className="form-part">
+                                <label for="email">Talk to us:</label><br />
+                                <input type="email" id="email" placeholder="hello@letsgavel.com" name="email"/>
+                            </form>
+                        </div>
                     </div>
-
+                    
+                    <div className="col-6">
                     <div className="footer-linkd">
                         <ul className="footer-link-left">
                             <li className="footer-list">
@@ -39,7 +41,7 @@ export default function Footer (){
                             </li>
                         </ul>
 
-                        <ul className="footer-link-left">
+                        <ul className="footer-link-right">
                             <li className="footer-list">
                                 <a href="#" className="footer-link">Data Protection &amp; Privacy</a>
                             </li>
@@ -67,6 +69,7 @@ export default function Footer (){
                                 <a href="#" className="ft-icon"><Twitter /></a>
                             </li>
                         </ul>
+                    </div>
                     </div>
                 </div>
             </div>

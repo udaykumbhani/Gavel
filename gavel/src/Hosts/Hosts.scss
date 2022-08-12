@@ -36,11 +36,8 @@
         }
     }
     .hosts-bottom-wrapper{
+        position: relative;
         .hosts-bottom-col{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
             .host-content-main{
                 display: flex;
                 align-items: center;
@@ -56,10 +53,11 @@
                 overflow: hidden;
                 position: relative;
                 .hosts-image-part{
-                    width: 93px;
+                    max-width: 93px;
                     height: 93px;
+                    width: 100%;
                     overflow: hidden;
-                    margin-bottom: 18px;
+                    margin: 0 auto;
                     .personelogo-img{
                         max-width: 93px;
                         height: 100%;
@@ -76,7 +74,7 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    margin-bottom: 27px;
+                    margin: 18px 0px 27px 0px;
                     .ac-name{
                         font-family: $montserrat;
                         font-style: normal;
@@ -132,6 +130,55 @@
                     }
                 }
             }
+        }
+        .custom-rightarrow{
+            display: inline;
+            border: 1.5px solid #0CFDE4;
+            border-radius: 100%;
+            padding: 16.5px 14.56px;
+            background: transparent;
+            position: absolute;
+            right: 0;
+            bottom: 54%;
+            svg{
+                display: inline;
+                // position: absolute;
+                // right: 0;
+                // top: 45%;
+                // bottom: 0;
+                // border: 1px solid white;
+                // padding: 16.5px 14.56px;
+            }
+        }
+    }
+    // .slick-slide.slick-active:last-child{
+    //     padding-right: 0px;
+        
+    // }
+
+
+    .slick-arrow.slick-prev::before{
+        display: none;
+    }
+    .slick-arrow.slick-next::before{
+        font-size: 50px;
+    }
+    .slick-arrow.slick-next{
+        right: 27px;
+        bottom: 0;
+        top: 34%;
+        z-index: 1;
+        /* padding: 25px; */
+        opacity: 0;
+    }
+    .slick-list{
+        max-height: 419px;
+        @include lg {
+            max-height: 500px;
+        }
+        @include sm {
+            max-height: 600px;
+            height: 100%;
         }
     }
 }
