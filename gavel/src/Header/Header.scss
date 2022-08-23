@@ -34,10 +34,10 @@ header{
                         margin-right: 25px;
                     }
 
-                    .nav-list:last-child{
+                    &:last-child{
                         margin-right: 0px;
                     }
-                    .nav-list:hover::after{
+                    &:hover::after{
                         content: '';
                         position: absolute;
                         bottom: -36px;

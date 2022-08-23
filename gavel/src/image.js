@@ -7,4 +7,8 @@ export const image = {
     Persone :require("../src/images/Persone.png"),
     Joinusimg :require("../src/images/Joinusimg.png"),
     personelogo :require("../src/images/personelogo.png"),
+    Pokemon :require("../src/images/Pokemon.png"),
+    FunkoPop :require("../src/images/FunkoPop.png"),
+    Actionfigure :require("../src/images/Actionfigure.png"),
+    ads :require("../src/images/ads.png"),
 }
