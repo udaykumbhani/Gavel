@@ -8,7 +8,7 @@ $headig-color : #FFE3D6;
 
 
 @mixin heading-first{
-    font-family: $rubik;
+    font-family:    $montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -30,6 +30,10 @@ $headig-color : #FFE3D6;
     border-radius: 6px;
     padding: 12px 20px;
     background: transparent;
+    transition: all 0.4s;
+    &:hover{
+        background:#B2A8EE ;
+    }
 }
 @mixin show-btn{
     font-family: $montserrat;
@@ -38,6 +42,21 @@ $headig-color : #FFE3D6;
     font-size: 12px;
     line-height: 12px;
     color: $secondary-color;
+   
+}
+@mixin follow-btn {
+    font-family: $rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: $primary-color;
+    border: 1px solid $primary-color; 
+    border-radius: 6px;
+    padding: 14px 28.5px;
+    background: transparent;
 }
 
 $breakpoints:( 'sm': 576px, 'md': 768px,'xmd': 876px, 'lg': 1024px, 'xl': 1199px, 'xxl': 1439px);

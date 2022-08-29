@@ -1,0 +1,147 @@
+@import '../App.css';
+@import '../style/Varibles.scss';
+
+.categories{
+    padding: 36.5px 0px;
+    .categories-top-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 0px 30px 0px;
+        .categories-top-col{
+            .categories-heading{
+                @include heading-first;
+                @include xl{
+                    min-width: 700px;
+                }
+                @include xmd{
+                    min-width: 400px;
+                }
+                @include sm{
+                    min-width: 200px;
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .categories-top-col{
+            .categories-btn{
+                @include view-btn;
+                @include sm{
+                    font-size: 14px;
+                    line-height: 14px;
+                    padding: 8px 10px;
+                }
+            }
+        }
+    }
+
+    .categories-bottom-wrapper{
+        position: relative;
+        .categories-col{
+            // display: flex;
+            // flex-wrap: wrap;
+            // gap: 32px;
+            // overflow: hidden;
+            .categories-box{
+                position: relative;
+                background: transparent;
+                border: 1px solid #3F4E72;
+                box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
+                border-radius: 15px;
+                padding: 79.23px 0px 30.44px 0px;
+                max-width: 256px;
+                overflow: hidden;
+                width: 100%;
+                .categories-img-part{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 192.33px;
+                    width: 100%;
+                    overflow: hidden;
+                    .categories-img{
+                        max-width: 189.25px;
+                        height: 192.33px;
+                        overflow: hidden;
+                        object-fit: cover;
+                    }
+                }
+                .box-text{
+                    background: #B2A8EE;
+                    border-radius: 0px 0px 15px 15px;
+                    position: absolute;
+                    bottom: 1px;
+                    left: 1px;
+                    right: 1px;
+                    .box-heading{
+                        font-family: $montserrat;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 22px;
+                        text-align: center;
+                        letter-spacing: 0.002em;
+                        color: #1F2A43;
+                        padding: 9.5px 0px;
+                    }
+                }
+                .box-shape{
+                    display: inline;
+                    background: rgba(178, 168, 238, 0.4);
+                    filter: blur(74px);
+                    position: absolute;
+                    top: -35px;
+                    right: 2px;
+                    left: 2px;
+                    max-width: 252px;
+                    height: 87px;
+                    border-radius: 100%;
+                }
+            }
+        }
+        .custom-rightarrow{
+            display: inline;
+            border: 1.5px solid #0CFDE4;
+            border-radius: 100%;
+            padding: 16.5px 14.56px;
+            background: transparent;
+            position: absolute;
+            right: 0;
+            bottom: 54%;
+            svg{
+                display: inline;
+                // position: absolute;
+                // right: 0;
+                // top: 45%;
+                // bottom: 0;
+                // border: 1px solid white;
+                // padding: 16.5px 14.56px;
+            }
+        }
+    }
+    .slick-arrow.slick-prev::before{
+        display: none;
+    }
+    .slick-arrow.slick-next::before{
+        font-size: 50px;
+    }
+    .slick-arrow.slick-next{
+        right: 27px;
+        bottom: 0;
+        top: 34%;
+        z-index: 1;
+        /* padding: 25px; */
+        opacity: 0;
+    }
+    .slick-list{
+        max-height: 419px;
+        @include lg {
+            max-height: 500px;
+        }
+        @include sm {
+            max-height: 600px;
+            height: 100%;
+        }
+    }
+}

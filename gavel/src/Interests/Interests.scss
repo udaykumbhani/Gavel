@@ -1,0 +1,82 @@
+@import '../App.css';
+@import '../style/Varibles.scss';
+
+.interests{
+    padding: 36.5px 0px;
+    .interests-top-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 64px;
+        margin: 0px 0px 30px 0px;
+        max-width: 540px;
+        @include sm{
+            justify-content: space-between;
+        }
+        .interests-top-col{
+            .interests-heading{
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: -0.01em;
+                color: $headig-color;
+                min-width: 436px;
+                @include sm{
+                    min-width: 200px;
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+            .interests-btn{
+                padding: 12.89px 12.92px;
+                border-radius: 50%;
+                border: 1px solid $primary-color;
+                background: transparent;
+                @include sm{
+                    padding: 7px 7px;
+                }
+                .interests-btn svg{
+                    width: 14px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+    .interests-bottom-wrapper{
+        max-width: 540px;
+        padding: 30px 0px 26px 30px;
+        background: transparent;
+        border: 1px solid #2E3954;
+        box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
+        border-radius: 6px;
+        @include sm{
+            padding: 15px 0px 15px 15px;
+        }
+        .interests-main{
+            display: flex;
+            row-gap: 20px;
+            column-gap: 10px;
+            flex-wrap: wrap;
+            @include sm{
+                row-gap: 10px;
+                column-gap: 10px;
+            }
+            .interests-btn{
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                text-align: center;
+                color: #B2A8EE;
+                padding: 6px 7px;
+                border: 1px solid #3F4E72;
+                box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
+                border-radius: 6px;
+                background: transparent;
+            }
+        }
+    }
+}
